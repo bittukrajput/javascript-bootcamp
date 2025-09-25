@@ -63,6 +63,84 @@ Below are the topics I’ve covered up to now:
   - Checking login credentials.
   - Conditional rendering in web pages.
 
+# 🔹 Logical Operators in JavaScript
+
+This folder contains examples and explanations of **logical operators** in JavaScript.  
+Logical operators are used to combine or invert boolean values (`true` or `false`) and control the flow of decision-making in programs.
+
+---
+
+## 📝 Table of Contents
+1. [Introduction](#introduction)
+2. [Logical Operators](#logical-operators)
+3. [Truth Table](#truth-table)
+4. [Examples](#examples)
+5. [Real-world Usage](#real-world-usage)
+6. [Common Interview Questions](#common-interview-questions)
+7. [References](#references)
+
+---
+
+## 🔹 Introduction
+
+Logical operators are used in conditional statements to make decisions based on multiple conditions.  
+In JavaScript, the **three main logical operators** are:
+
+- `&&` (Logical AND)
+- `||` (Logical OR)
+- `!` (Logical NOT)
+
+---
+
+## 🔹 Logical Operators
+
+| Operator | Name           | Description                                   |
+|----------|---------------|-----------------------------------------------|
+| `&&`     | Logical AND    | Returns `true` if **both** operands are true  |
+| `||`     | Logical OR     | Returns `true` if **any one** operand is true |
+| `!`      | Logical NOT    | Inverts the boolean value                    |
+
+---
+
+## 🔹 Truth Table
+
+### Logical AND (`&&`)
+| A (true/false) | B (true/false) | A && B |
+|---------------|---------------|--------|
+| true          | true          | true   |
+| true          | false         | false  |
+| false         | true          | false  |
+| false         | false         | false  |
+
+### Logical OR (`||`)
+| A | B | A \|\| B |
+|---|---|---------|
+| true  | true  | true  |
+| true  | false | true  |
+| false | true  | true  |
+| false | false | false |
+
+### Logical NOT (`!`)
+| A | !A  |
+|---|-----|
+| true  | false |
+| false | true  |
+
+---
+
+## 🔹 Examples
+
+### Example 1: Logical AND
+```javascript
+let age = 25;
+let hasLicense = true;
+
+if (age > 18 && hasLicense) {
+  console.log("You can drive.");
+} else {
+  console.log("You cannot drive.");
+}
+
 ---
 
 ## 📚 Why This Repo Exists  

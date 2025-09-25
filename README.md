@@ -63,68 +63,41 @@ Below are the topics I’ve covered up to now:
   - Checking login credentials.
   - Conditional rendering in web pages.
 
-# 🔹 Logical Operators in JavaScript
-
-This folder contains examples and explanations of **logical operators** in JavaScript.  
-Logical operators are used to combine or invert boolean values (`true` or `false`) and control the flow of decision-making in programs.
-
 ---
 
-## 📝 Table of Contents
-1. [Introduction](#introduction)
-2. [Logical Operators](#logical-operators)
-3. [Truth Table](#truth-table)
-4. [Examples](#examples)
-5. [Real-world Usage](#real-world-usage)
-6. [Common Interview Questions](#common-interview-questions)
-7. [References](#references)
+### 10️⃣ Logical Operators — Quick Notes
 
----
+    Main Operators
 
-## 🔹 Introduction
+    && → Logical AND (dono true → true)
 
-Logical operators are used in conditional statements to make decisions based on multiple conditions.  
-In JavaScript, the **three main logical operators** are:
+    || → Logical OR (koi ek true → true)
 
-- `&&` (Logical AND)
-- `||` (Logical OR)
-- `!` (Logical NOT)
+    ! → Logical NOT (value ka ulta kar deta hai)
 
----
+    Truth Table
 
-🔹 9️⃣ Logical Operators — Quick Notes
+    AND (&&): true && true → true, else false
 
-Main Operators
+    OR (||): false || true → true, else false
 
-&& → Logical AND (dono true → true)
+    NOT (!): !true → false, !false → true
 
-|| → Logical OR (koi ek true → true)
+    Real-life Uses
 
-! → Logical NOT (value ka ulta kar deta hai)
+    ✅ Login check (username and password)
 
-Truth Table
+    ✅ Access control (Admin or Premium)
 
-AND (&&): true && true → true, else false
+    ✅ Input validation / form checks
 
-OR (||): false || true → true, else false
+    ⚡ Memory Tip
 
-NOT (!): !true → false, !false → true
+    AND = All conditions must pass
 
-Real-life Uses
+    OR = Only one condition needed
 
-✅ Login check (username and password)
-
-✅ Access control (Admin or Premium)
-
-✅ Input validation / form checks
-
-⚡ Memory Tip
-
-AND = All conditions must pass
-
-OR = Only one condition needed
-
-NOT = Invert the result
+    NOT = Invert the result
 
 ---
 
@@ -139,11 +112,11 @@ if (age > 18 && hasLicense) {
   console.log("You can drive.");
 } else {
   console.log("You cannot drive.");
-}```
+}
 
 ---
 
-## 📚 Why This Repo Exists  
+# 📚 Why This Repo Exists  
 
 I am learning JavaScript step by step. By uploading my daily practice:
 - I can track my progress.

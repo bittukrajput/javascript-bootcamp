@@ -92,39 +92,39 @@ In JavaScript, the **three main logical operators** are:
 
 ---
 
-## 🔹 Logical Operators
+🔹 9️⃣ Logical Operators — Quick Notes
 
-| Operator | Name           | Description                                   |
-|----------|---------------|-----------------------------------------------|
-| `&&`     | Logical AND    | Returns `true` if **both** operands are true  |
-| `||`     | Logical OR     | Returns `true` if **any one** operand is true |
-| `!`      | Logical NOT    | Inverts the boolean value                    |
+Main Operators
 
----
+&& → Logical AND (dono true → true)
 
-## 🔹 Truth Table
+|| → Logical OR (koi ek true → true)
 
-### Logical AND (`&&`)
-| A (true/false) | B (true/false) | A && B |
-|---------------|---------------|--------|
-| true          | true          | true   |
-| true          | false         | false  |
-| false         | true          | false  |
-| false         | false         | false  |
+! → Logical NOT (value ka ulta kar deta hai)
 
-### Logical OR (`||`)
-| A | B | A \|\| B |
-|---|---|---------|
-| true  | true  | true  |
-| true  | false | true  |
-| false | true  | true  |
-| false | false | false |
+Truth Table
 
-### Logical NOT (`!`)
-| A | !A  |
-|---|-----|
-| true  | false |
-| false | true  |
+AND (&&): true && true → true, else false
+
+OR (||): false || true → true, else false
+
+NOT (!): !true → false, !false → true
+
+Real-life Uses
+
+✅ Login check (username and password)
+
+✅ Access control (Admin or Premium)
+
+✅ Input validation / form checks
+
+⚡ Memory Tip
+
+AND = All conditions must pass
+
+OR = Only one condition needed
+
+NOT = Invert the result
 
 ---
 
@@ -139,7 +139,7 @@ if (age > 18 && hasLicense) {
   console.log("You can drive.");
 } else {
   console.log("You cannot drive.");
-}
+}```
 
 ---
 

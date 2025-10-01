@@ -145,12 +145,11 @@ entered by the user will be stored in the variable `dayNumber` for further proce
     
 // }
 //console.log('Program Ended!!');
-let input = prompt('Enter character between A to E');
-debugger
+let input = 'A'
 // Get first character and convert to uppercase
-let grade = input?.charAt(0).toUpperCase() || "";  
+//let grade = input?.charAt(0).toUpperCase() || "";  
 
-switch(grade){
+switch(input){
     case 'A':
         console.log('Your score is between 85% to 100%');
         break;

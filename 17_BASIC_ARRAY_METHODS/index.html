@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head charset="utf-8">
+        <title>title</title>
+        <script src="script.js"></script>
+    </head>
+
+<body>
+    <h1>Basic Array methods in javascript</h1>
+    <ol>
+        <li>
+            <b>push()</b>
+            <ul>
+                <li>Adds one or more elements to the end of an array.</li>
+                <li>Returns the new length of the array.</li>
+                <li>Mutates the original array.</li>
+                <li>Complexity: O(1) amortized (may occasionally resize memory).</li>
+            </ul>
+        </li>
+        <li>
+            <b>pop()</b>
+            <ul>
+                <li>Removes the last element from an array</li>
+                <li>Returns the removed element.</li>
+                <li>Mutates the array.</li>
+                <li>Complexity: O(1).</li>
+            </ul>
+        </li>
+        <li>
+            <b>shift()</b>
+            <ul>
+                <li>Removes the first element from an array.</li>
+                <li>Returns the removed element.</li>
+                <li>Mutates the array.</li>
+                <li>Complexity: O(n) (because every element shifts left).</li>
+            </ul>
+        </li>
+        <li>
+            <b>unshift()</b>
+            <ul>
+                <li>Adds one or more elements to the beginning of the array.</li>
+                <li>Returns the new length.</li>
+                <li>Mutates the array.</li>
+                <li>Complexity: O(n) (elements shift right).</li>
+            </ul>
+        </li>
+        <li>
+            <b>concat()</b>
+            <ul>
+                <li>The concat() method in JavaScript is used to merge two or more arrays (or values) into a new array
+                </li>
+                <li>t does not change (mutate) the original arrays; instead, it returns a new array.</li>
+                <li>Syntax : let newArray = array1.concat(array2, array3, ...);</li>
+            </ul>
+        </li>
+        <li>
+            <b>indexOf()</b>
+            <ul>
+                <li>The indexOf() method in JavaScript is used to find the first occurrence of a specified element in an
+                    array.</li>
+                <li>It returns the index (position) of the element if found, otherwise it returns -1.</li>
+                <li>It performs a strict comparison (===), meaning both value and type must match.</li>
+                <li>
+                    Syntax: array.indexOf(searchElement, fromIndex)
+                    <ul>
+                        <li>searchElement → The element you want to find.</li>
+                        <li>fromIndex (optional) → The index to start searching from (default = 0).</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <b>includes()</b>
+            <ul>
+                <li>The includes() method in JavaScript checks whether an array contains a specific element</li>
+                <li>
+                    It returns a boolean value
+                    <ul>
+                        <li>true if the element exists.</li>
+                        <li>false if not found.</li>
+                    </ul>
+                </li>
+                <li>Unlike indexOf(), it doesn’t return index; just a yes/no answer.</li>
+                <li>
+                    Syntax : array.includes(searchElement, fromIndex)
+                    <ul>
+                        <li>searchElement → the element to look for.</li>
+                        <li>fromIndex (optional) → the position to start searching from (default = 0).</li>
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+        <li>
+            <b>reverse()</b>
+            <ul>
+                <li>Reverses the order of array elements in place.</li>
+                <li>Returns the same array reference (mutated).</li>
+                <li>Complexity: O(n).</li>
+            </ul>
+        </li>
+        <li>
+            <b>sort()</b>
+            <ul>
+                <li>Sorts array in place.</li>
+                <li>Default: converts elements to strings, compares UTF-16 code points.</li>
+                <li>
+                    With compareFn(a, b):
+                    <ul>
+                        <li>Return <0 → a comes before b</li>
+                        <li>Return 0 → no change</li>
+                        <li>Return >0 → b before a</li>
+                    </ul>
+                </li>
+                <li>Returns the mutated array.</li>
+                <li>Complexity: O(n log n).</li>
+            </ul>
+        </li>
+        <li>
+            <b>slic()</b>
+            <ul>
+                <li>The slice() method is used to extract a portion of an array into a new array, without changing
+                    (mutating) the original one.</li>
+                <li>It takes start index and end index as arguments.</li>
+                <li>
+                    Syntax : array.slice(start, end)
+                    <ul>
+                        <li>start → index where extraction begins (inclusive).</li>
+                        <li>end → index where extraction ends (exclusive).</li>
+                        <li>If end is omitted, slice continues till the end of array.</li>
+                        <li>Negative values count from the end of the array.</li>
+                    </ul>
+                </li>
+                <li></li>
+            </ul>
+        </li>
+        <li>
+            <b>splice()</b>
+            <ul>
+                <li>General-purpose edit tool: can insert, remove, or replace elements.</li>
+                <li>
+                    Parameters:
+                    <ul>
+                        <li>start: index to begin.</li>
+                        <li>deleteCount: how many elements to remove.</li>
+                        <li>...items: items to insert.</li>
+                    </ul>
+                </li>
+                <li>Returns an array of deleted elements</li>
+                <li>Mutates the array.</li>
+                <li>Complexity: O(n) (shifting involved).</li>
+            </ul>
+        </li>
+    </ol>
+</html>

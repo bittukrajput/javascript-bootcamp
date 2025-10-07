@@ -40,3 +40,30 @@ function subtract(){
 subtract();
 console.log("Program Ended!");
 
+var globalVar = "I'm global";
+let globalLet = "I'm also global";
+const globalConst = "I'm global too";
+
+function showGlobal() {
+    console.log(globalVar);  // Accessible
+    console.log(globalLet);  // Accessible
+    console.log(globalConst); // Accessible
+}
+
+showGlobal();
+console.log(globalVar);
+console.log(globalLet);
+console.log(globalConst);
+{
+    var localVar = "I'm local";
+
+}
+function myFunction() {
+    //var localVar = "I'm local";
+    let localLet = "I'm also local";
+    const localConst = "I'm local too";
+    
+    console.log(localVar); // Works fine
+}
+// console.log(localVar); 
+myFunction();
